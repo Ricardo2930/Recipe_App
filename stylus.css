@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f65e12;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 400px;
+  max-height: auto;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 20px aliceblue;
+}
+
+.search-box {
+  height: 50px;
+  padding: 5px 20px;
+  margin: 5px 0px;
+  border: grey solid 1px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-box i {
+  color: grey;
+  font-size: 15px;
+}
+
+.search-box input {
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  text-align: start;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.display-msg {
+  color: grey;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.info-box {
+  display: none;
+}
+
+.title-dish {
+  padding: 10px;
+}
+
+.title-dish-img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.box-name-dish {
+  background-color: #f65e12;
+  border-radius: 10px;
+  padding: 5px 0px;
+}
+
+.ingredients-dish {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 20px;
+  /* background-color:beige; */
+  font-size: 14px;
+  text-align: start;
+  padding: 10px 15px;
+}
+
+.view-recipe {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: #f65e12 solid 1px;
+  color: #f65e12;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+  display: none;
+}
+
+.view-recipe:hover {
+  background-color: #f65e12;
+  color: white;
+  transition: 0.5s all;
+}
+
+.instructions-box {
+  max-height: 500px;
+  display: none;
+  padding: 10px;
+  font-size: 14px;
+  overflow-y: scroll;
+  transition: all 0.2s;
+}
+
+.instructions-box::-webkit-scrollbar {
+  display: none;
+}
+
+.close-instructions {
+  padding: 10px 17px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: #f65e12 solid 1px;
+  color: #f65e12;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  display: none;
+  margin-top: 20px;
+}
+
+.close-instructions:hover {
+  background-color: #f65e12;
+  color: white;
+  transition: 0.5s all;
+}
+
+.instructions {
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: flex;
+  text-align: start;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylus.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h2 class="title-header">Recipe App</h2>
+      </header>
+      <section class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Write Dish Name (Ex. Pizza)"
+          class="search-box-input"
+        />
+      </section>
+
+      <p class="display-msg">Result will be displayed here....</p>
+
+      <!-- box of dish -->
+      <section class="info-box"></section>
+
+      <button class="view-recipe">View Recipe</button>
+      <button class="close-instructions">Close Recipe</button>
+      <section class="instructions-box">
+        <span class="instructions"> </span>
+      </section>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>
